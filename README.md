@@ -1,2 +1,48 @@
-# website
-Homepage
+# Plot Twist Wines
+
+A single-page marketing website for **Plot Twist Wines** — a bookstore wine lounge on Anna Maria Island, FL. *Where every glass has a story.*
+
+## Overview
+
+A modern, elegant one-pager with a coastal-literary aesthetic: warm wine tones, gold accents, and a touch of Gulf teal. Built with vanilla HTML, CSS, and JavaScript — no build step, no dependencies.
+
+## Sections
+
+- **Hero** — full-screen intro with tagline and calls to action
+- **Our Story** — the bookstore-meets-wine-bar origin
+- **The Experience** — browse, sip, and gather
+- **Wine List** — curated by-the-glass menu and flights
+- **The Shelf** — staff book picks paired with pours
+- **Events** — book club, wine flights, author nights
+- **Visit** — location, hours, contact, and a reservation request form
+- **Footer** — navigation, contact, and social links
+
+## Features
+
+- Responsive layout (desktop → mobile) with a hamburger menu
+- Scroll-reveal animations via `IntersectionObserver`
+- Sticky, color-shifting navigation
+- Front-end reservation form with validation feedback
+- Google Fonts (Fraunces + Jost); respects `prefers-reduced-motion`
+
+## Run it
+
+Just open `index.html` in a browser, or serve locally:
+
+```bash
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
+
+## Files
+
+```
+index.html    — markup and content
+styles.css    — all styling and responsive rules
+script.js     — nav, scroll reveal, and form logic
+favicon.svg   — site icon
+```
+
+## Notes
+
+Hero and story imagery use gradients plus a couple of Unsplash photos (loaded via URL). Swap those for your own photography in `styles.css` (`.story__img--1`, `.story__img--2`). All copy, menu items, hours, and contact details are placeholders — update them with the real thing.
