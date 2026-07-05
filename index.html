@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plot Twist Wines · A Bookstore Wine Lounge on Anna Maria Island</title>
+  <meta name="description" content="Plot Twist Wines is a bookstore wine lounge on Anna Maria Island where every glass has a story. Curated wines, well-loved books, and coastal evenings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Plot Twist Wines home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M6 4h13a7 7 0 0 1 7 7v17a6 6 0 0 0-6-4H6z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M13 10c3 2 3 6 0 8-3 2-3 6 0 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text">Plot&nbsp;Twist<em>Wines</em></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Our Story</a>
+        <a href="#experience">The Experience</a>
+        <a href="#pour">Wine List</a>
+        <a href="#shelf">The Shelf</a>
+        <a href="#events">Events</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <a href="#visit" class="btn btn--ghost nav__cta">Reserve a Table</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#story">Our Story</a>
+      <a href="#experience">The Experience</a>
+      <a href="#pour">Wine List</a>
+      <a href="#shelf">The Shelf</a>
+      <a href="#events">Events</a>
+      <a href="#visit">Visit</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow reveal">Coming Soon · Anna Maria Island, FL</p>
+        <h1 class="hero__title reveal">Where every glass<br/><span>has a story.</span></h1>
+        <p class="hero__sub reveal">A bookstore wine lounge tucked between the tide and the shelves — pour a glass, turn a page, and let the evening take an unexpected turn.</p>
+        <div class="hero__actions reveal">
+          <a href="#pour" class="btn btn--solid">Explore the Wine List</a>
+          <a href="#story" class="btn btn--line">Our Story</a>
+        </div>
+      </div>
+      <a href="#story" class="hero__scroll" aria-label="Scroll to content">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Curated Pours</span><span aria-hidden="true">✦</span>
+        <span>Well-Loved Books</span><span aria-hidden="true">✦</span>
+        <span>Coastal Evenings</span><span aria-hidden="true">✦</span>
+        <span>Local Vintners</span><span aria-hidden="true">✦</span>
+        <span>Quiet Corners</span><span aria-hidden="true">✦</span>
+        <span>Curated Pours</span><span aria-hidden="true">✦</span>
+        <span>Well-Loved Books</span><span aria-hidden="true">✦</span>
+        <span>Coastal Evenings</span><span aria-hidden="true">✦</span>
+        <span>Local Vintners</span><span aria-hidden="true">✦</span>
+        <span>Quiet Corners</span><span aria-hidden="true">✦</span>
+      </div>
+    </div>
+
+    <!-- Story -->
+    <section class="story section" id="story">
+      <div class="story__grid">
+        <div class="story__media reveal">
+          <div class="story__img story__img--1"></div>
+          <div class="story__img story__img--2"></div>
+          <div class="story__badge">
+            <span>Est.</span>
+            <strong>2026</strong>
+          </div>
+        </div>
+        <div class="story__text">
+          <p class="eyebrow reveal">Our Story</p>
+          <h2 class="reveal">A plot twist worth savoring.</h2>
+          <p class="reveal">We started with a simple belief: the best stories are meant to be shared over a good glass of wine. So we filled an old island cottage with shelves of paperbacks, a wall of small-production bottles, and a handful of candlelit tables.</p>
+          <p class="reveal">Part bookstore, part wine bar, entirely unhurried — Plot Twist is where locals trade recommendations, where first dates linger, and where a "quick stop after the beach" becomes the best part of the day.</p>
+          <ul class="story__stats reveal">
+            <li><strong>Curated</strong><span>wines</span></li>
+            <li><strong>Hundreds</strong><span>of books to browse</span></li>
+            <li><strong>1</strong><span>very good island</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="section__head">
+        <p class="eyebrow reveal">The Experience</p>
+        <h2 class="reveal">Two great loves, one cozy room.</h2>
+        <p class="section__lead reveal">Come for the wine, stay for the books — or the other way around. Either way, you're in for a good chapter.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M6 3h9a4 4 0 0 1 4 4v14a3 3 0 0 0-3-2H6z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6 3v15" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          </div>
+          <h3>Browse the Shelves</h3>
+          <p>A hand-picked collection of fiction, coastal reads, and staff obsessions. Buy it, or read it right here at the bar.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 3h8l-1 8a4 4 0 0 1-8 0z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 15v5M8 20h8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sip Something New</h3>
+          <p>Rotating pours by the glass, curated flights, and bottles you won't find at the grocery store. No wine snobbery allowed.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 19c3-6 13-6 16 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="9" cy="8" r="2.4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="15" cy="8" r="2.4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          </div>
+          <h3>Gather &amp; Linger</h3>
+          <p>Book clubs, author nights, and slow Sundays. Pull up a chair — there's always room for one more story.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Wine List -->
+    <section class="pour section" id="pour">
+      <div class="pour__inner">
+        <div class="section__head">
+          <p class="eyebrow reveal">By the Glass &amp; Bottle</p>
+          <h2 class="reveal">Sample Wine List</h2>
+          <p class="section__lead reveal">A taste of what's to come — a living list that will turn with the seasons.</p>
+        </div>
+
+        <div class="menu">
+          <div class="menu__col reveal">
+            <h3 class="menu__cat">Whites &amp; Rosé</h3>
+            <ul class="menu__list">
+              <li>
+                <div class="menu__row"><span class="menu__name">Coastal Albariño</span></div>
+                <p class="menu__note">Rías Baixas, Spain · saline, stone fruit, sea breeze</p>
+              </li>
+              <li>
+                <div class="menu__row"><span class="menu__name">Loire Chenin Blanc</span></div>
+                <p class="menu__note">Vouvray, France · quince, honey, bright acidity</p>
+              </li>
+              <li>
+                <div class="menu__row"><span class="menu__name">Provençal Rosé</span></div>
+                <p class="menu__note">Provence, France · wild strawberry, citrus peel</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__col reveal">
+            <h3 class="menu__cat">Reds</h3>
+            <ul class="menu__list">
+              <li>
+                <div class="menu__row"><span class="menu__name">Plot Twist Pinot</span></div>
+                <p class="menu__note">Willamette Valley, OR · cherry, forest floor, silk</p>
+              </li>
+              <li>
+                <div class="menu__row"><span class="menu__name">Old-Vine Grenache</span></div>
+                <p class="menu__note">Priorat, Spain · black plum, garrigue, spice</p>
+              </li>
+              <li>
+                <div class="menu__row"><span class="menu__name">Chianti Classico</span></div>
+                <p class="menu__note">Tuscany, Italy · sour cherry, leather, herbs</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__col reveal">
+            <h3 class="menu__cat">Bubbles &amp; Flights</h3>
+            <ul class="menu__list">
+              <li>
+                <div class="menu__row"><span class="menu__name">Grower Champagne</span></div>
+                <p class="menu__note">Champagne, France · brioche, green apple, fine bead</p>
+              </li>
+              <li>
+                <div class="menu__row"><span class="menu__name">Col Fondo Prosecco</span></div>
+                <p class="menu__note">Veneto, Italy · cloudy, dry, delightfully rustic</p>
+              </li>
+              <li>
+                <div class="menu__row"><span class="menu__name">The Trilogy Flight</span></div>
+                <p class="menu__note">three pours, one theme · chosen weekly by staff</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pour__foot reveal">
+          <p>Pair any glass with a small plate — local cheeses, marcona almonds, chocolate &amp; olives.</p>
+          <a href="#visit" class="btn btn--solid">Plan Your Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Shelf -->
+    <section class="shelf section" id="shelf">
+      <div class="section__head">
+        <p class="eyebrow reveal">From the Shelf</p>
+        <h2 class="reveal">Currently pairing well.</h2>
+        <p class="section__lead reveal">Staff picks that go down easy — each one matched to a pour we love.</p>
+      </div>
+
+      <div class="books">
+        <article class="book reveal">
+          <div class="book__cover book__cover--1"><span>The Salt Path</span></div>
+          <h4>Coastal Memoir</h4>
+          <p class="book__pair">Pairs with · Coastal Albariño</p>
+        </article>
+        <article class="book reveal">
+          <div class="book__cover book__cover--2"><span>Tomorrow, &amp; Tomorrow</span></div>
+          <h4>Literary Fiction</h4>
+          <p class="book__pair">Pairs with · Plot Twist Pinot</p>
+        </article>
+        <article class="book reveal">
+          <div class="book__cover book__cover--3"><span>The Guest List</span></div>
+          <h4>Twisty Thriller</h4>
+          <p class="book__pair">Pairs with · Grower Champagne</p>
+        </article>
+        <article class="book reveal">
+          <div class="book__cover book__cover--4"><span>A Gentleman in Moscow</span></div>
+          <h4>Modern Classic</h4>
+          <p class="book__pair">Pairs with · Chianti Classico</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events section" id="events">
+      <div class="events__inner">
+        <div class="section__head section__head--left">
+          <p class="eyebrow reveal">What's Coming</p>
+          <h2 class="reveal">Evenings worth showing up for.</h2>
+          <p class="section__lead reveal">A taste of the programming we're dreaming up — dates to be announced.</p>
+        </div>
+        <ul class="events__list">
+          <li class="event reveal">
+            <div class="event__body">
+              <h3>Book Club: Plot Twist Edition</h3>
+              <p>We read it, we ruin it (kindly), we drink about it. Think coastal mysteries and unexpected endings. Newcomers always welcome.</p>
+            </div>
+          </li>
+          <li class="event reveal">
+            <div class="event__body">
+              <h3>Sunset Wine Flights</h3>
+              <p>Three pours, one theme, golden hour on the porch. Small plates from a rotating local kitchen.</p>
+            </div>
+          </li>
+          <li class="event reveal">
+            <div class="event__body">
+              <h3>Authors &amp; Anecdotes</h3>
+              <p>An intimate reading with a visiting island author, followed by conversation and a signature pairing.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="visit section" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow reveal">Visit Us</p>
+          <h2 class="reveal">Find your quiet corner.</h2>
+          <p class="reveal">Steps from the Gulf, on Anna Maria Island. Walk in for a glass, or reserve a table for the evening — opening soon.</p>
+
+          <div class="visit__details">
+            <div class="reveal">
+              <h4>Location</h4>
+              <p>Anna Maria Island, FL</p>
+            </div>
+            <div class="reveal">
+              <h4>Hours</h4>
+              <p>TBD</p>
+            </div>
+            <div class="reveal">
+              <h4>Say Hello</h4>
+              <p><a href="tel:+19413990255">(941) 399-0255</a><br/><a href="mailto:hello@plottwistwines.com">hello@plottwistwines.com</a></p>
+            </div>
+          </div>
+
+          <form class="reserve" id="reserveForm" novalidate>
+            <p class="reserve__label reveal">Reserve a table</p>
+            <div class="reserve__row reveal">
+              <input type="text" name="name" placeholder="Your name" required aria-label="Your name" />
+              <input type="email" name="email" placeholder="Email" required aria-label="Email" />
+            </div>
+            <div class="reserve__row reveal">
+              <input type="date" name="date" required aria-label="Date" />
+              <input type="time" name="time" required aria-label="Time" />
+            </div>
+            <div class="reserve__row reveal">
+              <select name="guests" aria-label="Party size">
+                <option value="">Party of…</option>
+                <option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6+</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--solid reveal">Request Reservation</button>
+            <p class="reserve__msg" id="reserveMsg" role="status"></p>
+          </form>
+        </div>
+
+        <div class="visit__map reveal" aria-label="Map of Anna Maria Island">
+          <div class="visit__mapcard">
+            <div class="visit__mapart" aria-hidden="true">
+              <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+                <rect width="400" height="400" fill="#0d2b2b"/>
+                <path d="M0 250 Q120 220 200 250 T400 240 V400 H0 Z" fill="#12403c"/>
+                <path d="M-20 300 Q160 270 260 300 T440 290 V400 H-20 Z" fill="#0a1f1f" opacity="0.7"/>
+                <g stroke="#caa15a" stroke-width="1.4" opacity="0.55" fill="none">
+                  <path d="M40 90 H360"/><path d="M120 40 V360"/><path d="M40 200 H300"/><path d="M240 40 V300"/>
+                </g>
+                <circle cx="200" cy="180" r="9" fill="#caa15a"/>
+                <circle cx="200" cy="180" r="20" fill="none" stroke="#caa15a" stroke-width="1.4" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="visit__pin">
+              <strong>Plot Twist Wines</strong>
+              <span>Anna Maria Island, FL</span>
+              <a href="https://maps.google.com/?q=Anna+Maria+Island+FL" target="_blank" rel="noopener" class="btn btn--line btn--sm">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--footer">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M6 4h13a7 7 0 0 1 7 7v17a6 6 0 0 0-6-4H6z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M13 10c3 2 3 6 0 8-3 2-3 6 0 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="brand__text">Plot&nbsp;Twist<em>Wines</em></span>
+        </a>
+        <p>A bookstore wine lounge on Anna Maria Island. Come for a chapter, stay for the sunset.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h5>Explore</h5>
+          <a href="#story">Our Story</a>
+          <a href="#pour">Wine List</a>
+          <a href="#shelf">The Shelf</a>
+          <a href="#events">Events</a>
+        </div>
+        <div>
+          <h5>Visit</h5>
+          <a href="#visit">Anna Maria Island, FL</a>
+          <a href="tel:+19413990255">(941) 399-0255</a>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="mailto:hello@plottwistwines.com">Newsletter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>© <span id="year"></span> Plot Twist Wines · Anna Maria Island, FL</p>
+      <p>Please sip responsibly. Must be 21+ to enjoy the wine.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
