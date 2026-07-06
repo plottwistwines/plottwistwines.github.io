@@ -37,12 +37,24 @@ python3 -m http.server 8000
 ## Files
 
 ```
-index.html    — markup and content
+index.html    — markup, content, and structured data
 styles.css    — all styling and responsive rules
-script.js     — nav, scroll reveal, and form logic
+script.js     — nav, scroll reveal, reservation + notify forms
 favicon.svg   — site icon
+og-image.png  — 1200x630 social share image
+robots.txt    — crawler directives (incl. AI/answer-engine bots)
+sitemap.xml   — single-URL sitemap
 ```
+
+## SEO / AEO
+
+- **Meta:** canonical URL, Open Graph, Twitter Card, and geo tags in `<head>`.
+- **Structured data:** `WineBar` (with `BookStore` additionalType) and a `FAQPage` JSON-LD block for rich results and answer-engine citations.
+- **FAQ section:** native `<details>` accordions — crawlable with no JS.
+- **Crawlers:** `robots.txt` explicitly welcomes GPTBot, PerplexityBot, ClaudeBot, etc., and points to `sitemap.xml`.
+
+When you get a custom domain, update the absolute URLs in `index.html` (canonical, og:url, og:image, JSON-LD `url`/`@id`/`image`), `robots.txt`, and `sitemap.xml`.
 
 ## Notes
 
-Hero and story imagery use gradients plus a couple of Unsplash photos (loaded via URL). Swap those for your own photography in `styles.css` (`.story__img--1`, `.story__img--2`). All copy, menu items, hours, and contact details are placeholders — update them with the real thing.
+Hero and story imagery use gradients plus a couple of Unsplash photos (loaded via URL). Swap those for your own photography in `styles.css` (`.story__img--1`, `.story__img--2`). All copy, menu items, hours, and contact details are placeholders — update them with the real thing. Forms use a `mailto:` handoff (no backend); the destination is `hello@plottwistwines.com`.

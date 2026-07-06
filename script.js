@@ -89,6 +89,25 @@
     });
   }
 
+  // Notify-me capture (mailto handoff)
+  const notifyForm = document.getElementById("notifyForm");
+  const notifyMsg = document.getElementById("notifyMsg");
+  if (notifyForm) {
+    notifyForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const value = notifyForm.querySelector('[name="notifyEmail"]').value.trim();
+      if (!value || !/.+@.+\..+/.test(value)) {
+        notifyMsg.textContent = "Please enter a valid email address.";
+        return;
+      }
+      const subject = "[Notify Me] Plot Twist Wines";
+      const body = `Please add me to the opening list.\n\nEmail: ${value}`;
+      window.location.href = `mailto:hello@plottwistwines.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      notifyMsg.textContent = "Thanks! Your email app should open to confirm.";
+      notifyForm.reset();
+    });
+  }
+
   // Footer year
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
