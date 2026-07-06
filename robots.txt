@@ -20,4 +20,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://plottwistwines.github.io/website/sitemap.xml
+Sitemap: https://plottwistwines.com/sitemap.xml
