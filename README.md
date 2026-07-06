@@ -40,7 +40,13 @@ python3 -m http.server 8000
 index.html    — markup, content, and structured data
 styles.css    — all styling and responsive rules
 script.js     — nav, scroll reveal, reservation + notify forms
-favicon.svg   — site icon
+favicon.svg   — primary vector site icon (wine glass on a book)
+favicon.ico   — multi-size (16/32/48) fallback for older browsers
+favicon-16x16.png, favicon-32x32.png, favicon-48x48.png — PNG favicons
+apple-touch-icon.png — 180x180 iOS home-screen icon
+icon-192.png, icon-512.png — PWA / Android icons
+logo-512.png, logo-1024.png — large logos for social profiles & listings
+site.webmanifest — PWA manifest referencing the app icons
 og-image.png  — 1200x630 social share image
 robots.txt    — crawler directives (incl. AI/answer-engine bots)
 sitemap.xml   — single-URL sitemap
