@@ -1,6 +1,6 @@
-# Plot Twist Wines
+# Plot Twist
 
-A single-page marketing website for **Plot Twist Wines** — a bookstore wine lounge on Anna Maria Island, FL. *Where every glass has a story.*
+A single-page marketing website for **Plot Twist** — a bookstore wine lounge on Anna Maria Island, FL. *Where every glass has a story.*
 
 ## Overview
 
