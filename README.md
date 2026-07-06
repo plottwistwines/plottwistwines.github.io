@@ -45,7 +45,9 @@ favicon.ico   — multi-size (16/32/48) fallback for older browsers
 favicon-16x16.png, favicon-32x32.png, favicon-48x48.png — PNG favicons
 apple-touch-icon.png — 180x180 iOS home-screen icon
 icon-192.png, icon-512.png — PWA / Android icons
-logo-512.png, logo-1024.png — large logos for social profiles & listings
+logo-512.png, logo-1024.png — large square logos for social profiles & listings
+logo-horizontal.svg / .png — horizontal wordmark lockup (wine text, for light backgrounds)
+logo-horizontal-light.svg / .png — horizontal wordmark lockup (cream text, for dark backgrounds)
 site.webmanifest — PWA manifest referencing the app icons
 og-image.png  — 1200x630 social share image
 robots.txt    — crawler directives (incl. AI/answer-engine bots)
